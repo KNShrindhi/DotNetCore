@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  simplecoreapp:
+    image: simplecoreapp
+    build:
+      context: ./SimpleCoreApp
+      dockerfile: Dockerfile
