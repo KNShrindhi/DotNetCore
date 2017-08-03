@@ -1,4 +1,4 @@
-FROM microsoft/aspdotnetcore:1.1
+FROM microsoft/aspnetcore:1.1
 COPY . /app
 WORKDIR /app
 EXPOSE 5000/tcp
