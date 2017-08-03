@@ -1,6 +1,5 @@
-FROM microsoft/aspnetcore:1.1
-ARG source
+FROM microsoft/dotnet:latest
+COPY . /app
 WORKDIR /app
-EXPOSE 80
-COPY ${source:-obj/Docker/publish} .
-ENTRYPOINT ["dotnet", "SimpleCoreApp.dll"]
+EXPOSE 5000/tcp
+ENTRYPOINT ["dotnet", "run"]
